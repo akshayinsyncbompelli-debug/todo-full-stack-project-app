@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>My Profile</h1></title>
+    <style>
+        @keyframes dog{
+            0%{
+                transform: scaleX(0);
+            }
+            100%{
+                transform: scaleX(1);
+            }
+        }
+        .Nida{
+             background-color: black;
+             color:aliceblue
+        }
+        .nisa{
+            height:100px;
+            width:100px;
+            animation-name:dog;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transform-origin: left;
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <form onsubmit="hey(event)" class="formu">
+        <input type="email" placeholder="Enter Email I'd" required name="some">
+        <button onclick="hey()">Enter</button>
+    </form>
+    
+    <h1 class="Nida" style="display: none;" >Starlit.lyra45</h1>
+    <P style="display:none;"><i> starlit Lyra is a <a href="https://www.snapchat.com/web">Snapchat</a> user who jopined the platform on 24 june 2022 born on 30 september she is a snapchat  addict and she joined because of her cousins but trying to maintain streaks.</i></P>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSvNkdAi42FEZsz7VVG83J9wY7W4Hc95F_Wjz8p9ILQ&s=10" style="display: none;" class="nisa">
+    <script>
+let my=["nidha@gmail.com","aparna@gmail.com"]
+        let h1=document.querySelector("h1")
+         let p=document.querySelector("p")
+               let img=document.querySelector("img")
+               let foumu=document.querySelector(".formu")
+        function hey(a){
+               a.preventDefault()
+            if(my.includes(a.target.some.value)){
+
+                
+                h1.style.display=""       
+                p.style.display=""   
+                
+                img.style.display=""   
+                foumu.style.display="none"
+            }else{
+                alert("invalid details entered")
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
