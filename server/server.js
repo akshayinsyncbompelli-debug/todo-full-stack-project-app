@@ -43,7 +43,7 @@ mongoose
 
 app.use(
   cors({
-    origin: "https://todo-full-stack-project-app.vercel.app/login",
+    origin: "https://todo-full-stack-project-app.vercel.app",
     credentials: true,
   })
 );
